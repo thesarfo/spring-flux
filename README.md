@@ -2,20 +2,6 @@
 
 This repository provides a reference implementation of reactive APIs using Spring WebFlux. It demonstrates the use of `Mono` and `Flux`, which are the two main types in Project Reactor, the reactive library used by Spring WebFlux.
 
-## Table of Contents
-- [Introduction to Reactive Programming](#introduction-to-reactive-programming)
-- [Project Reactor Overview](#project-reactor-overview)
-    - [Mono](#mono)
-    - [Flux](#flux)
-- [Getting Started](#getting-started)
-- [Example Usage](#example-usage)
-    - [Handling Mono](#handling-mono)
-    - [Handling Flux](#handling-flux)
-- [Reactive Repositories](#reactive-repositories)
-- [Testing Reactive APIs](#testing-reactive-apis)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction to Reactive Programming
 
 Reactive programming is a programming paradigm that deals with asynchronous data streams and the propagation of change. It is particularly useful for handling a large number of requests efficiently, making it ideal for modern web applications.

@@ -7,6 +7,10 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
+
+/**
+ * This class demonstrates how you can make a get request with Webclient expecting a response Publisher of mono
+ */
 public class Lec01GetSingleResponseTest extends BaseTest{
 
     @Autowired
@@ -23,6 +27,7 @@ public class Lec01GetSingleResponseTest extends BaseTest{
 
         System.out.println(response);
     }
+
 
     @Test
     public void stepVerifierTest(){

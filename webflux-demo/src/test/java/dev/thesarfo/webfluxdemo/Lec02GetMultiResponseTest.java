@@ -7,6 +7,9 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
+/**
+ * This class demonstrates how you can make a get request with Webclient expecting a response publisher of Flux
+ */
 class Lec02GetMultiResponseTest extends BaseTest {
 
     @Autowired
@@ -23,6 +26,9 @@ class Lec02GetMultiResponseTest extends BaseTest {
                 .doOnNext(System.out::println);
 
 
+        /*
+         * Step Verifiers are like assert statements we can use to test the response of our webclient request
+         */
         StepVerifier.create(responseFlux)
                 .expectNextCount(10)
                 .verifyComplete();
